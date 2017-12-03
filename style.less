@@ -26,14 +26,14 @@
 
 // Size of max navbar button
 .rm-max .rm-small .rm-button {
-    font-size: 2em;
+    //font-size: 2em;
 }
 
 @maxButtonFontSize: 2em;
 
 // Style navbar
 .rm-desktop li {
-    background-color: #89B2DB;
+    //background-color: #89B2DB;
 }
 
 @navbarItemBgColor: #89B2DB;
@@ -57,7 +57,13 @@
 
     a {
         text-decoration: none;
+        color: #333;
     }
+}
+
+
+img {
+    max-width: 100%;
 }
 
 //Media query
@@ -72,5 +78,32 @@
 
     .profile {
         width: 10%;
+    }
+}
+
+//Media query
+@media screen and (max-width: 700px) {
+    .footer-column {
+        width: 100%;
+    }
+
+}
+
+//Media query
+@media screen and (max-width: 600px) {
+    .sidebar {
+        display: none;
+    }
+
+}
+
+//Media query
+@media screen and (max-width: 560px) {
+    .site-logo-text {
+        width: 90%;
+    }
+
+    .navbar2 {
+        display: none;
     }
 }
